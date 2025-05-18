@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Create new review (in a real app, this would be sent to a server)
+            // Create new review
             addNewReview(name, event, rating, reviewText);
             
             // Clear form
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
             this.disabled = true;
             
-            // Simulate loading delay (in a real app, this would be an API call)
+            // Simulate loading delay
             setTimeout(() => {
                 // Load more reviews
                 loadMoreReviews();
@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (!reviewsGrid) return;
         
-        // Sample data for additional reviews (in a real app, this would come from an API)
+        // Sample data for additional reviews
         const additionalReviews = [
             {
                 category: 'ppv',
